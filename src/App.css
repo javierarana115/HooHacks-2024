@@ -1,23 +1,26 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 0;
   text-align: center;
 }
 
+
+
 .picture{
-  height: 60px; /* Adjusted from 6em to make the logo smaller */
-  padding: 60px;
+  height: 100px; /* Adjusted from 6em to make the logo smaller */
   will-change: filter;
   transition: filter 300ms;
   background-color: transparent;
+  align-items: left;
+  margin-top: 50px;
 }
 
 .logo:hover {
   filter: drop-shadow(0 0 40px #7D8F69);
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 40px #7D8F69);
 }
 
 @keyframes logo-spin {
@@ -37,6 +40,21 @@
 
 .card {
   padding: 2em;
+}
+
+.chat-box{
+  width: 1000;
+  transform: scale(1.5);
+  height: 1000;
+  overflow-y: auto;
+  margin-top: 400px;
+  text-align: left;
+  padding-right: 100px;
+  padding-bottom: 50px;
+  word-wrap: break-word;
+  width: 200px;
+  overflow-wrap: break-word;
+
 }
 
 

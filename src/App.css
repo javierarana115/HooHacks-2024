@@ -5,14 +5,16 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
+.picture{
+  height: 60px; /* Adjusted from 6em to make the logo smaller */
+  padding: 60px;
   will-change: filter;
   transition: filter 300ms;
+  background-color: transparent;
 }
+
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+  filter: drop-shadow(0 0 40px #7D8F69);
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
@@ -36,6 +38,8 @@
 .card {
   padding: 2em;
 }
+
+
 
 .read-the-docs {
   color: #888;

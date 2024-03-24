@@ -27,11 +27,7 @@ function App() {
         <button className="button">Morocco</button>
       </div>
       <br></br><br></br>
-      <div>
-      <input type='check box' className='chat-box' height={100} ></ input>
-      </div>
-    </>
-    
+    </>    
   );
 }
 

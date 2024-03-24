@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import sustainabilityImage from './assets/sustainable-green-svgrepo-com.svg'; 
-import './App.css';
+import './china.css';
 
 function China() {
   const [count, setCount] = useState(0);

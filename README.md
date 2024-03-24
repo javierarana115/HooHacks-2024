@@ -1,6 +1,6 @@
 # Eco Awareness
 
-## For HooHacks 2024 🍃
+## Project for HooHacks 2024 🍃
 
 A website that provides the public with information about environmental sustainability and promotes understanding and care for the environment, with a bit of web-scrapping capabilities.
 

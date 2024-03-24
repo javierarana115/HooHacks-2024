@@ -1,0 +1,31 @@
+{
+  ".mw-parser-output .template-chem2-su{display:inline-block;font-size:80%;line-height:1;vertical-align:-0.35em}.mw-parser-output .template-chem2-su>span{display:block;text-align:left}.mw-parser-output sub.template-chem2-sub{font-size:80%;vertical-align:-0.35em}.mw-parser-output sup.template-chem2-sup{font-size:80%;vertical-align:0.65em}N2O Emissions (5%)": {},
+  "Air pollution - Average Exposure to NO2 (10%)": {},
+  "Air pollution - Average Exposure to PM2.5 (30%)": {},
+  "Air pollution - PM2.5 Exceedance (30%)": {},
+  "Biome Protection (Global) (20%)": {},
+  "Biome Protection (National) (20%)": {},
+  "Black Carbon Emissions (5%)": {},
+  "CO2 Emissions (Power) (20%)": {},
+  "Drinking Water Quality (50%)": {
+    "Ecosystem vitality (60%)": {
+      "Water resources (25%)": "Wastewater treatment (100%)"
+    }
+  },
+  "Marine protected areas (20%)": {},
+  "Methane Emissions (20%)": {},
+  "NOX Emissions (50%)": {
+    "Environmental health (40%)": {
+      "Health Impacts (33%)": "Environmental Risk Exposure (100%)"
+    }
+  },
+  "Nitrogen balance (25%)": {},
+  "Regional Marine Trophic Index (50%)": {},
+  "Representativeness Index (10%)": {},
+  "Species Habitat Index (10%)": {},
+  "Species Protection Index (20%)": {},
+  "Species protection (Global) (20%)": {},
+  "Species protection (National) (20%)": {},
+  "Terrestrial protected areas (Global Biome Weights) (20%)": {},
+  "Trend in CO2 emissions per kWh (25%)": {}
+}

@@ -14,16 +14,77 @@
   </h1>
 
   <div class="button-container">
-    <a href="./China.html"><button class="button">China</button></a>
-    <a href="./Thialand.html"><button class="button">Thialand</button></a>
-    <a href="./Nigeria.html"><button class="button">Nigeria</button></a>
-    <a href="./Egypt.html"><button class="button">Egypt</button></a>
-    <a href="./Venezuela.html"><button class="button">Venezuela</button></a>
-    <a href="./Morocco.html"><button class="button">Morocco</button></a>
+    <a href="./Climate Change.html"><button class="button">Climate Change</button></a>
+    <a href="./Corporate Sustainability.html"><button class="button">Corporate Sustainability</button></a>
+    <a href="./Sustainable Agriculture.html"><button class="button">Sustainable Agriculture</button></a>
+    <a href="./Water Conservation.html"><button class="button">Water Conservation</button></a>
+    <a href="./Waste Management.html"><button class="button">Waste Management</button></a>
+    <a href="./Sustainable Urban Development.html"><button class="button">Sustainable Urban Development</button></a>
   </div>
 
   <div class="flex-container-image">
   <blockquote class="twitter-tweet"  height = "10px" data-theme="dark"><p lang="en" dir="ltr">The grass lawn was conceived by companies pushing chemical products. Here&#39;s why a clover lawn is so much better for your pocket and the planet: <a href="https://t.co/WzHtl5utzZ">https://t.co/WzHtl5utzZ</a> <a href="https://twitter.com/hashtag/StPatricksDay?src=hash&amp;ref_src=twsrc%5Etfw">#StPatricksDay</a> <a href="https://t.co/CLly3mGiNo">pic.twitter.com/CLly3mGiNo</a></p>&mdash; Treehugger.com (@Treehugger) <a href="https://twitter.com/Treehugger/status/1504490845021646856?ref_src=twsrc%5Etfw">March 17, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </div>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Environmental Performance Index Data</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<h1>Environmental Performance Stats 2022</h1>
+  <div class="grid-container" id="data-container"></div>
+
+
+  
+
+  <script src="scraper.js"></script>
+  <script>
+    function fetchData() {
+      fetch('epi_data.json')
+        .then(response => response.json())
+        .then(data => {
+          const dataContainer = document.getElementById('data-container');
+
+          Object.keys(data).forEach(objective => {
+            const objectiveDiv = document.createElement('div');
+            objectiveDiv.classList.add('grid-item');
+            const objectiveHeading = document.createElement('h2');
+            objectiveHeading.textContent = objective;
+            objectiveDiv.appendChild(objectiveHeading);
+
+            Object.keys(data[objective]).forEach(category => {
+              const categoryDiv = document.createElement('div');
+              categoryDiv.classList.add('grid-item');
+              const categoryHeading = document.createElement('h3');
+              categoryHeading.textContent = category;
+              categoryDiv.appendChild(categoryHeading);
+
+              Object.entries(data[objective][category]).forEach(([indicator, value]) => {
+                const indicatorPara = document.createElement('p');
+                indicatorPara.classList.add('indicator');
+                indicatorPara.innerHTML = `<span>${indicator}:</span> ${value}`;
+                categoryDiv.appendChild(indicatorPara);
+              });
+
+              dataContainer.appendChild(categoryDiv);
+            });
+
+            dataContainer.appendChild(objectiveDiv);
+          });
+        })
+        .catch(error => console.error('Error fetching data:', error));
+    }
+
+    fetchData();
+  </script>
+  </body>
+  </html>
+
+
 </body>
 </html>

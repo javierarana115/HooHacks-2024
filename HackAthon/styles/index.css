@@ -14,6 +14,14 @@
   border-radius: 100px;
 }
 
+.flex-container-image{
+  display: flex;
+  justify-content: right;
+  margin-top: 100px;
+  margin-right: 20px;
+}
+
+
 h1{
   text-align: center;
   color: rgb(252, 253, 255);

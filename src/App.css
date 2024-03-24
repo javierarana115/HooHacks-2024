@@ -44,10 +44,16 @@
 
 
 #main-heading {
-  background-image: linear-gradient(to right, #ff8a00, #e52e71); /* Define gradient */
+  
   -webkit-background-clip: text; /* Apply gradient to text */
   background-clip: text; /* Apply gradient to text */
-  color: transparent; /* Hide original text color */
+  color: #fbfbfb; /* Hide original text color */
+  transition: color 1s;
+}
+
+#main-heading:hover {
+  
+  color: #E6E5A3;
 }
 
 .buttons-container {

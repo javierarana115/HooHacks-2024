@@ -17,14 +17,14 @@ function App() {
       </div>
       
       <div className="buttons-container">
-        <button className="button">Button 1</button>
-        <button className="button">Button 2</button>
-        <button className="button">Button 3</button>
-        <button className="button">Button 4</button>
+        <a href='./China.jsx'><button className="button">China</button></a>
+        <button className="button">Thailand</button>
+        <button className="button">Nigeria</button>
+        <button className="button">Egypt</button>
         </div>
         <div>
-        <button className="button">Button 5</button>
-        <button className="button">Button 6</button>
+        <button className="button">Venezuela</button>
+        <button className="button">Morocco</button>
       </div>
       <br></br><br></br>
       <div>
